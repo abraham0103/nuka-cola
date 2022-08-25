@@ -46,7 +46,7 @@ def main():
     with cnx.cursor() as cursor:
         cursor.execute('SELECT * FROM phonebook;')
         result = cursor.fetchall()
-    current_time = result[0][2]
+    current_time = result[0][3]
     cnx.commit()
     cnx.close()
 
